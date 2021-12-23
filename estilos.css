@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(./RobotoMono-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.monitor {
+    width: 50%;
+    height: 500px;
+    max-height: 50%;
+    border: rgb(49, 66, 31) solid 1px;
+    border-radius: 20px;
+    box-shadow: inset rgba(128, 255, 0, 0.568) 0 0 10px, rgba(95, 100, 89, 0.87) 0 0 10px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: black;
+}
+
+h3 {
+    float: left;
+    position: relative;
+    color: rgba(125, 185, 66, 0.507);
+    text-shadow: rgb(127, 238, 16) 0px 0px 5px;
+    font-family: 'RobotoMono';
+    font-weight: 100;
+}
+
+h3 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: rgb(0, 0, 0);
+    border-left: rgba(111, 216, 6, 0.349) solid 3px;
+    animation: maquina 10s infinite alternate steps(34);
+}
+
+@keyframes maquina {
+    0% {
+        width: 100%;
+    }
+    30% {
+        width: 0%;
+    }
+    60% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
